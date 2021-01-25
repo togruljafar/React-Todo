@@ -1,0 +1,283 @@
+.app {
+  background-image: url(./images/moon.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  transition: linear 3s;
+}
+label {
+  display: block;
+}
+hr {
+  width: 100%;
+  border: 0.1px solid #FFF;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.navbar {
+  width: 30%;
+  height: 100vh;
+  position: relative;
+  padding-left: 0;
+  padding-top: 0;
+  padding-right: 0;
+  padding-bottom: 0;
+  overflow: hidden;
+  transition: linear .2s;
+}
+
+.open-navbar{
+  width: 30%;
+}
+.close-navbar {
+  width: 0;
+}
+.navbar .active {
+  background: #fff;
+  border-radius: 5px;
+  color: rgb(4, 31, 59);
+}
+.navbar-nav {
+  flex-wrap: wrap;
+  flex-direction: column;
+  overflow-y: scroll;
+}
+.navbar-nav.navbar-dark {
+  background-color: rgba(4, 31, 59, .7);
+}
+.navbar-nav::-webkit-scrollbar {
+  display: none;
+}
+.nav-item {
+  width: 100%;
+  padding: 5px 10px;
+  color: #fff;
+  font: normal 18px "Barlow", sans-serif;
+}
+.nav-link {
+  padding: 3px 0;
+  color: #FFF!important;
+}
+.active .nav-link {
+  color: rgb(4, 31, 59)!important;
+}
+.todoapp {
+  width: 70%;
+  height: 100vh;
+  position: relative;
+  padding-left: 0;
+  padding-top: 0;
+  padding-right: 0;
+  padding-bottom: 0;
+  overflow: hidden;
+  transition: linear .2s;
+}
+.todoapp-inner {
+  width: 100%;
+  height: 100%;
+  padding-left: 10px;
+  padding-top: 0;
+  padding-right: 10px;
+  display: flex;
+  flex-direction: column;
+}
+.addlist {
+  width: 100%;
+  background: rgb(4, 31, 59);
+  padding: 10px;
+  margin-top: auto;
+  margin-bottom: 0;
+  color: #fff;
+  cursor: pointer;
+}
+.closeMenuBtn {
+  color: #fff;
+  font-size: 25px;
+}
+.closeBtn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+  font-size: 30px;
+  z-index: 999;
+}
+.navbar-brand {
+  padding: 20px 10px 10px 10px;
+}
+.head-title {
+  width: 100%;
+  padding: 30px 0 30px 0;
+  margin-bottom: 0;
+  font: bold 35px "Barlow", sans-serif;
+  color: #fff;
+}
+.todoItem {
+  width: 100%;
+  margin-top: 10px;
+  background: #fff;
+  border-radius: 10px;
+}
+.todoList {
+  overflow-y: scroll;
+  padding-bottom: 10px;
+}
+.todoList::-webkit-scrollbar {
+  display: none;
+}
+.checkBox {
+  position: relative;
+  padding: 8px;
+  border: 2px solid gray;
+  border-radius: 50%;
+  margin-left: 10px;
+  margin-right: 16px;
+  cursor: pointer;
+}
+.checkBox i {
+  position: absolute;
+  left: -1px;
+  top: -2px;
+  color: rgb(4, 31, 59);
+  font-size: 20px;
+}
+.item-title {
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+.item-time {
+  margin-bottom: 0;
+  color: dodgerblue;
+  font-size: 14px;
+}
+.starBox {
+  margin-left: auto;
+  margin-right: 10px;
+  color: gray;
+  font-size: 20px;
+  cursor: pointer;
+}
+.addItem {
+  width: 100%;
+  background: rgba(3,0,3, .5);
+  padding: 20px;
+  margin-top: auto;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  color: #fff;
+  cursor: pointer;
+}
+.addItem:hover {
+  color: #fff;
+  text-decoration: none;
+}
+.addItemForm, .editItemForm {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  right: 0;
+  bottom: -100%;
+  transition: linear .3s;
+  z-index: 9;
+}
+.addItemBtn, .editItemBtn {
+  background-color:  rgb(4, 31, 59);
+  color: #FFF;
+}
+.header {
+  color: #FFF;
+  font-size: 30px;
+  position: relative;
+  right: 0;
+}
+.header .svgBtn {
+  font-size: 30px;
+  margin-right: 20px;
+  margin-left: 10px;
+  cursor: pointer;
+}
+.header svg {
+  cursor: pointer;
+  margin-right: 10px;
+}
+.header i {
+  font-size: 20px;
+  margin-right: 10px;
+  cursor: pointer;
+}
+.showItem {
+  padding-right: 20px;
+  padding-left: 10px;
+  font-size: 18px;
+  color: rgb(4, 31, 59);
+  cursor: pointer;
+}
+.item-description {
+  width: 100%;
+  padding: 10px;
+  font-size: 14px;
+  margin-bottom: 0;
+}
+.selectedItemEventcons {
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+.header .selectedItemEventcons {
+  position: absolute;
+  z-index: 99;
+  right: 0;
+}
+.selectedIconi {
+position: absolute;
+right: 0;
+}
+.selectedItemEventcons i {
+  padding: 0px 10px;
+  font-size: 18px;
+  cursor: pointer;
+  color:dodgerblue;
+}
+.notfound {
+  width: 100%;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 100vh;
+  overflow: hidden;
+  background-color: #fff;
+  color: dodgerblue;
+  z-index: 9999;
+}
+@media screen and (max-width: 768px) {
+  .open-navbar.navbar {
+    width: 100%;
+    position: absolute;
+    z-index: 999;
+  }
+  .navbar-nav.navbar-dark {
+    background-color: rgba(4, 31, 59, 1);
+  }
+  .addlist {
+    background-color: #fff;
+    border-radius: 5px;
+    color:  rgb(4, 31, 59);
+  }
+  .todoapp {
+    min-width: 100%;
+  }
+  .selectedItemEventcons i {
+    padding: 0px 5px;
+    font-size: 16px;
+  }
+  .header i {
+    margin-right: 5px;
+  }
+  .head-title {
+    padding: 20px 0;
+    font: bold 28px "Barlow", sans-serif;
+  }
+  .header .svgBtn {
+    font-size: 28px;
+  }
+}

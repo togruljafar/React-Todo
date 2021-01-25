@@ -1,0 +1,18 @@
+{
+  "todoItems": [
+    {
+      "itemTitle": "This is my Todo app",
+      "itemDescription": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Aldus PageMaker including versions of Lorem Ipsum.",
+      "itemTime": "2021-01-15",
+      "isImportant": true,
+      "id": 2
+    },
+    {
+      "itemTitle": "React.js new App",
+      "itemDescription": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Aldus PageMaker including versions of Lorem Ipsum.",
+      "itemTime": "2021-01-31",
+      "isImportant": false,
+      "id": 3
+    }
+  ]
+}
